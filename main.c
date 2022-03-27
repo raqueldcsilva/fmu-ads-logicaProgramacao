@@ -1,19 +1,17 @@
 #include<stdio.h>
 
-int numero;
-float altura;
+float n1,n2,med;
 
 int main(){
-    //comando de entrada
-    printf("Digite um número: \n");
-    scanf("%d",&numero);//receber dado e armazenar na RAM
-    printf("Digite sua altura: \n");
-    scanf("%f",&altura);
+    //comandos de entrada
+    printf("Digite a nota 1\n");
+    scanf("%f",&n1);printf("Digite a nota 2\n");
     
-    //comando de saída
-    printf("\nO número que o usuário digitou é %d \n", numero);
-    printf("\nA altura do usuário é %.2f \n", altura);
-
+    scanf("%f",&n2);
+    med=(n1+n2)/2;
+    
+    //comando de saida
+    printf("\nA media do aluno e %.2f\n",med);
     
     return 0;
 }
